@@ -1,6 +1,6 @@
 import axiosClient from "./axiosClient";
 
-export const category = {
+export const CATEGORY = {
     tv: 'tv',
     movie: 'movie',
     person:'person'
@@ -32,35 +32,36 @@ const tmdbApi = {
         return axiosClient.get(url,params);
     },
     getVideos:(category,id)=>{
-        const url = category[category] + '/'+id +'videos';
+        console.log(category);
+        const url = CATEGORY[category] + '/'+id +'/videos';
         return axiosClient.get(url, {params: {}});
     },
     search:(category,params)=>{
-        const url = 'search/'+category[category];
+        const url = 'search/'+CATEGORY[category];
         return axiosClient.get(url,params);
     },
     detail:(category,id,params)=>{
-        const url = category[category] + '/' + id;
+        const url = CATEGORY[category] + '/' + id;
         return axiosClient.get(url, params);
     },
     credits: (category, id) => {
-        const url = category[category] + '/' + id + '/credits';
+        const url = CATEGORY[category] + '/' + id + '/credits';
         return axiosClient.get(url, {params: {}});
     },
     similar: (category, id) => {
-        const url = category[category] + '/' + id + '/similar';
+        const url = CATEGORY[category] + '/' + id + '/similar';
         return axiosClient.get(url, {params: {}});
     },
     trending:(category,time_window)=>{
-        const url = category[category]+'/'+time_window;
+        const url = CATEGORY[category]+'/'+time_window;
         return axiosClient.get(url,{params: {}});
     },
     discover:(category,params)=>{
-        const url = 'discover/'+ category[category];
+        const url = 'discover/'+ CATEGORY[category];
         return axiosClient.get(url,params);
     },
     genre:(category)=>{
-        const url = 'genre/'+category[category]+'/list';
+        const url = 'genre/'+CATEGORY[category]+'/list';
         return axiosClient.get(url, {params: {}});
     },
     person:(id)=>{
