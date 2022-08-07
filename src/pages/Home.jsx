@@ -33,6 +33,20 @@ export default function Home() {
               </div>
 
               <div className="section mb-3">
+                <div className="section_header mb-2">
+                  <h2>Upcoming Movies</h2>
+                  <Link to="/movie">
+                      <OutlineButton className="small">View more</OutlineButton>                    
+                  </Link>
+                </div>
+                <MovieList category={CATEGORY.movie} type={movieType.upcoming}/>
+              </div>
+
+             
+        
+              
+
+              <div className="section mb-3">
                     <div className="section_header mb-2">
                         <h2>Trending TV</h2>
                         <Link to="/tv">
@@ -51,8 +65,7 @@ export default function Home() {
                 </div>
                 <MovieList category={CATEGORY.tv} type={tvType.top_rated}/>
               </div>
-
-
+              
             </div>
     </>
   )
