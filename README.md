@@ -1,4 +1,4 @@
-# react-movie
+# Moviistic
 
     Responsive React Movies App With API
 
