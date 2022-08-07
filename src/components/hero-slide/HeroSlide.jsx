@@ -24,7 +24,6 @@ export default function HeroSlide() {
        
             const response = await tmdbApi.getMoviesList(movieType.popular,{params});
             setMovieItems(response.results.slice(1,10));
-            // console.log(response);
         }
         catch{
           console.log('error');
@@ -69,13 +68,10 @@ const HeroSlideItem = props =>{
 
   const setModalActive = async()=>{
     const modal = document.querySelector(`#modal_${item.id}`);
-    console.log(modal);
     const videos = await tmdbApi.getVideos(CATEGORY.movie,item.id);
-    console.log(videos);
     if(videos.results.length>0){
       const videSrc = 'https://www.youtube.com/embed/' + videos.results[0].key;
-      console.log(videSrc)
-      
+
       modal.querySelector('.modal_content > iframe').setAttribute('src', videSrc);
     }
     else{
