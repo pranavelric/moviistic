@@ -23,6 +23,9 @@ const AppRoutes = ()=> {
       element={ <Catalog/>}
       />
 
+      <Route path='/:category/type/:type'
+        element={ <Catalog/>}
+      />
     </Routes>
     );
 }

@@ -24,10 +24,10 @@ export default function MovieGrid(props) {
                         const params = {};
                         switch(props.category){
                             case CATEGORY.movie:
-                                response = await tmdbApi.getMoviesList(movieType.popular,{params});
+                                response = await tmdbApi.getMoviesList(props.type?props.type:movieType.popular,{params});
                                 break;
                             default:
-                                response = await tmdbApi.getTvList(tvType.popular,{params});
+                                response = await tmdbApi.getTvList(props.type?props.type:tvType.popular,{params});
                             
                         }
                     }
@@ -42,7 +42,7 @@ export default function MovieGrid(props) {
         }
         getList();
         
-    },[props.category,keyword]);
+    },[props.category,keyword,props.type]);
 
     const loadMore = async()=>{
         let response = null;
@@ -52,10 +52,10 @@ export default function MovieGrid(props) {
             };
             switch(props.category){
                 case CATEGORY.movie:
-                    response = await tmdbApi.getMoviesList(movieType.upcoming,{params});
-                    break;
+                                response = await tmdbApi.getMoviesList(props.type?props.type:movieType.popular,{params});
+                                break;
                 default:
-                    response = await tmdbApi.getTvList(tvType.popular,{params});
+                                response = await tmdbApi.getTvList(props.type?props.type:tvType.popular,{params});
                 
             }
         }else{

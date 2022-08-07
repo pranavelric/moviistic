@@ -6,7 +6,7 @@ import PageHeader from '../components/PageHeader/PageHeader';
 
 
 export default function Catalog() {
-  const { category } = useParams();
+  const { category,type } = useParams();
 
   return (
         <>
@@ -16,7 +16,7 @@ export default function Catalog() {
 
 <div className="container">
                 <div className="section mb-3">
-                    <MovieGrid category={category}/>
+                    <MovieGrid category={category} type={type}/>
                 </div>
             </div>
         </>

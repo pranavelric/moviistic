@@ -15,7 +15,7 @@ export default function Home() {
               <div className="section mb-3">
                 <div className="section_header mb-2">
                   <h2>Trending Movies</h2>
-                  <Link to="/movie">
+                  <Link to="/movie/type/popular">
                       <OutlineButton className="small">View more</OutlineButton>
                   </Link>
                 </div>
@@ -25,7 +25,7 @@ export default function Home() {
               <div className="section mb-3">
                 <div className="section_header mb-2">
                   <h2>Top Rated Movies</h2>
-                  <Link to="/movie">
+                  <Link to="/movie/type/top_rated">
                       <OutlineButton className="small">View more</OutlineButton>                    
                   </Link>
                 </div>
@@ -35,7 +35,7 @@ export default function Home() {
               <div className="section mb-3">
                 <div className="section_header mb-2">
                   <h2>Upcoming Movies</h2>
-                  <Link to="/movie">
+                  <Link to="/movie/type/upcoming">
                       <OutlineButton className="small">View more</OutlineButton>                    
                   </Link>
                 </div>
@@ -49,7 +49,7 @@ export default function Home() {
               <div className="section mb-3">
                     <div className="section_header mb-2">
                         <h2>Trending TV</h2>
-                        <Link to="/tv">
+                        <Link to="/tv/type/popular">
                             <OutlineButton className="small">View more</OutlineButton>
                         </Link>
                     </div>
@@ -59,7 +59,7 @@ export default function Home() {
               <div className="section mb-3">
                 <div className="section_header mb-2">
                   <h2>Top Rated TV</h2>
-                  <Link to="/tv">
+                  <Link to="/tv/type/top_rated">
                       <OutlineButton className="small">View more</OutlineButton>
                   </Link>
                 </div>
