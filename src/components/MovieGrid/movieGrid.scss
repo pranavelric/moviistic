@@ -1,1 +1,38 @@
 @use '../../scss/' as *;
+
+
+
+.movie_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 16px;
+    margin-bottom: 3rem;
+    @include tablet{
+        grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    }
+    &_loadmore{
+        text-align: center;
+    }
+}
+
+
+
+.movie_search{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    input{
+        width: 100%;
+        padding-right: 8rem;
+    }
+    button{
+        position: absolute;
+        right: 0;
+        top: 1px;
+        @include mobile {
+            right: 1px;
+            top: 1px;
+        }
+    }
+
+}
