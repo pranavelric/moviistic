@@ -6,7 +6,7 @@ import 'swiper/swiper.min.css';
 
 
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 
 import AppRoutes from './config/Routes';
 import Header from './components/header/Header';
@@ -14,11 +14,11 @@ import Footer from './components/footer/Footer';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
         <Header/>
         <AppRoutes/>
         <Footer/>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
