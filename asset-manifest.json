@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/moviistic/static/css/main.2c39d1ea.css",
-    "main.js": "/moviistic/static/js/main.1ac8f2ea.js",
+    "main.js": "/moviistic/static/js/main.0801ffc4.js",
     "static/media/boxicons.svg": "/moviistic/static/media/boxicons.0153fb5e5b5f697b4bcc.svg",
     "static/media/footer-bg.jpg": "/moviistic/static/media/footer-bg.67e95f05e76a8cebf7e2.jpg",
     "static/media/boxicons.eot": "/moviistic/static/media/boxicons.21f7c5dd64d88e1fc666.eot",
     "static/media/boxicons.woff": "/moviistic/static/media/boxicons.02aa967c5bfb9489501a.woff",
     "static/media/boxicons.ttf": "/moviistic/static/media/boxicons.ad0ddae357213656b3e6.ttf",
     "static/media/boxicons.woff2": "/moviistic/static/media/boxicons.0335b427967c56248ea6.woff2",
-    "static/media/moviistic.png": "/moviistic/static/media/moviistic.67797e942e59deb68592.png",
+    "static/media/moviistic.png": "/moviistic/static/media/moviistic.5c86de82b0b6e8e4abfd.png",
     "index.html": "/moviistic/index.html",
     "main.2c39d1ea.css.map": "/moviistic/static/css/main.2c39d1ea.css.map",
-    "main.1ac8f2ea.js.map": "/moviistic/static/js/main.1ac8f2ea.js.map"
+    "main.0801ffc4.js.map": "/moviistic/static/js/main.0801ffc4.js.map"
   },
   "entrypoints": [
     "static/css/main.2c39d1ea.css",
-    "static/js/main.1ac8f2ea.js"
+    "static/js/main.0801ffc4.js"
   ]
 }
